@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom shape for FloatingActionButton with larger corner radius -->
+    <style name="FABShape" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item> <!-- Adjust this value for larger or smaller corner radius -->
+    </style>
+</resources>

@@ -1,0 +1,87 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA"
+    tools:context=".MainActivity">
+
+
+    <include
+        layout="@layout/appbar"
+        android:id="@+id/headerLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <!-- Coordinator Layout for BottomAppBar and FAB -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- BottomAppBar with curve cradle for FAB -->
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomappbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/buttoncolor"
+            app:fabAlignmentMode="center"
+            app:fabCradleMargin="8dp"
+            app:fabCradleVerticalOffset="12dp"
+            app:fabCradleRoundedCornerRadius="28dp"
+            app:hideOnScroll="false">
+
+            <!-- Bottom Navigation Menu inside BottomAppBar -->
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomnavigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:menu="@menu/menu"
+                app:labelVisibilityMode="labeled"
+                android:elevation="0dp" />
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <!-- Center FloatingActionButton -->
+        <!-- Center FloatingActionButton with white border -->
+        <FrameLayout
+            android:layout_width="64dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/fab_background"
+            android:layout_marginBottom="37dp"
+            android:elevation="0dp" ><!-- Optional: to make the border more visible -->
+
+            <!-- Inner FloatingActionButton -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_add_circle_layer"
+                app:backgroundTint="@color/buttoncolor"
+                android:elevation="4dp"
+
+                app:shapeAppearanceOverlay="@style/FABShape"
+                app:tint="#F7F8FA"
+                android:scaleType="fitCenter"
+
+                />
+
+        </FrameLayout>
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
