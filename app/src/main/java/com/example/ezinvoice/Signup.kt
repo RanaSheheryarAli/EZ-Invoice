@@ -1,5 +1,6 @@
 package com.example.ezinvoice
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -11,6 +12,7 @@ import com.example.ezinvoice.databinding.ActivitySignupBinding
 
 class Signup : AppCompatActivity() {
     lateinit var databinding:ActivitySignupBinding
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -23,6 +25,10 @@ class Signup : AppCompatActivity() {
 
         databinding.tvSignIn.setOnClickListener {
             val intent =Intent(this@Signup,SignIn::class.java)
+            startActivity(intent)
+        }
+        databinding.btnsingup.setOnClickListener {
+            val intent =Intent(this@Signup,Business_Info::class.java)
             startActivity(intent)
         }
     }

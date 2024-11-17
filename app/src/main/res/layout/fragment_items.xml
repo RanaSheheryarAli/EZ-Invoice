@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ItemsFragment">
+
+
+
+        <ImageView
+            android:id="@+id/imgemptybox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="100dp"
+            app:srcCompat="@drawable/empty_box" />
+
+        <TextView
+            android:id="@+id/noitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="No item avaliable"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/imgemptybox"
+            app:layout_constraintStart_toStartOf="@+id/imgemptybox"
+            android:textStyle="bold"
+            android:textColor="#1A2E5E"
+            app:layout_constraintTop_toBottomOf="@+id/imgemptybox" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Tab “add new item” to add items"
+            app:layout_constraintEnd_toEndOf="@+id/noitem"
+            app:layout_constraintStart_toStartOf="@+id/noitem"
+            app:layout_constraintTop_toBottomOf="@+id/noitem"
+            android:textColor="#777777"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addnew"
+            android:layout_width="176dp"
+            android:layout_height="40dp"
+            android:drawableStart="@drawable/maskgroup"
+            android:backgroundTint="@color/buttoncolor"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp"
+            android:background="@drawable/bg_addnew"
+            android:text="Add New Items"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

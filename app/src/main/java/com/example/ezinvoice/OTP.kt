@@ -24,7 +24,7 @@ class OTP : AppCompatActivity() {
         }
 
         databinding.btnVerifyotp.setOnClickListener{
-            val intent= Intent(this@OTP,MainActivity::class.java)
+            val intent= Intent(this@OTP,Business_Info::class.java)
             startActivity(intent)
         }
     }

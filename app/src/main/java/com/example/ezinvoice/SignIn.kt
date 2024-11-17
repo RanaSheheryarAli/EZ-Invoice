@@ -49,6 +49,10 @@ databinding.btnGetStarted.setOnClickListener{
             val intent=Intent(this@SignIn,ForgotPassword::class.java)
             startActivity(intent)
         }
+        databinding.tvSignup.setOnClickListener{
+            val intent=Intent(this@SignIn,Signup::class.java)
+            startActivity(intent)
+        }
 
 
 
