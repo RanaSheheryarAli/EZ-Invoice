@@ -13,9 +13,18 @@
         android:theme="@style/Theme.EZInvoice"
         tools:targetApi="31">
         <activity
-            android:name=".Business_Info"
+            android:name=".Add_Items"
             android:exported="false"/>
+<!--        <intent-filter>-->
+<!--            <action android:name="android.intent.action.MAIN" />-->
 
+<!--            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--        </intent-filter>-->
+<!--    </activity>-->
+
+        <activity
+            android:name=".Business_Info"
+            android:exported="false" />
         <activity
             android:name=".Sale"
             android:exported="false" />
