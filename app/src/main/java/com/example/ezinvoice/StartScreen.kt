@@ -19,7 +19,7 @@ class StartScreen : AppCompatActivity() {
             startActivity(intent)
         }
         databinding.tvSignIn.setOnClickListener{
-            val intent=Intent(this@StartScreen,SignIn::class.java)
+            val intent=Intent(this@StartScreen,Signup::class.java)
             startActivity(intent)
         }
     }

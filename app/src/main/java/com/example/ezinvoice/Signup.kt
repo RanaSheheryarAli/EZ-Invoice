@@ -28,7 +28,7 @@ class Signup : AppCompatActivity() {
             startActivity(intent)
         }
         databinding.btnsingup.setOnClickListener {
-            val intent =Intent(this@Signup,Business_Info::class.java)
+            val intent =Intent(this@Signup,OTP::class.java)
             startActivity(intent)
         }
     }

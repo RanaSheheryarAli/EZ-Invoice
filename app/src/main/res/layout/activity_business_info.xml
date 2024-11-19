@@ -20,7 +20,7 @@
             <!-- Header -->
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="?actionBarSize"
                 android:minHeight="88dp"
                 android:background="#008E8C">
 
@@ -72,9 +72,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Add Business Logo"
-                    android:textColor="#2D2D2D"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textColor="#1A2E5E"
+                    android:textSize="24sp" />
 
                 <!-- Icon for the add button -->
                 <ImageView
@@ -109,7 +108,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Business Name"
-                    android:background="@drawable/rounded_box_outline"
+                    android:background="@drawable/rounded_box_outline_edt"
                     android:padding="10dp"
                     android:layout_marginTop="8dp" />
 
@@ -117,7 +116,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Owner Name"
-                    android:background="@drawable/rounded_box_outline"
+                    android:background="@drawable/rounded_box_outline_edt"
                     android:padding="10dp"
                     android:layout_marginTop="8dp" />
 
@@ -125,7 +124,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="GSTIN"
-                    android:background="@drawable/rounded_box_outline"
+                    android:background="@drawable/rounded_box_outline_edt"
                     android:padding="10dp"
                     android:layout_marginTop="8dp" />
 
@@ -133,7 +132,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Address"
-                    android:background="@drawable/rounded_box_outline"
+                    android:background="@drawable/rounded_box_outline_edt"
                     android:padding="10dp"
                     android:layout_marginTop="8dp" />
 
@@ -141,7 +140,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email Address"
-                    android:background="@drawable/rounded_box_outline"
+                    android:background="@drawable/rounded_box_outline_edt"
                     android:padding="10dp"
                     android:layout_marginTop="8dp" />
 
@@ -149,7 +148,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Phone Number"
-                    android:background="@drawable/rounded_box_outline"
+                    android:background="@drawable/rounded_box_outline_edt"
                     android:padding="10dp"
                     android:layout_marginTop="8dp" />
 
@@ -157,7 +156,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Website"
-                    android:background="@drawable/rounded_box_outline"
+                    android:background="@drawable/rounded_box_outline_edt"
                     android:padding="10dp"
                     android:layout_marginTop="8dp" />
 
@@ -168,7 +167,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Additional Setting"
+                    android:text="General Setting"
                     android:textColor="#008E8C"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -184,7 +183,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Currency Major Unit"
-                        android:background="@drawable/rounded_box_outline"
+                        android:background="@drawable/rounded_box_outline_edt"
                         android:padding="10dp"
                         android:layout_marginTop="8dp" />
 
@@ -192,7 +191,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Currency Minor Unit"
-                        android:background="@drawable/rounded_box_outline"
+                        android:background="@drawable/rounded_box_outline_edt"
                         android:padding="10dp"
                         android:layout_marginTop="8dp" />
 
@@ -200,14 +199,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Number Format"
-                        android:background="@drawable/rounded_box_outline"
+                        android:background="@drawable/rounded_box_outline_edt"
                         android:padding="10dp"
                         android:layout_marginTop="8dp" />
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_box_outline"
+                        android:background="@drawable/rounded_box_outline_edt"
                         android:padding="10dp"
                         android:layout_marginTop="8dp" />
 
@@ -224,7 +223,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        android:background="@drawable/rounded_box_outline"
+                        android:background="@drawable/rounded_box_outline_edt"
                         android:padding="10dp"
                         android:layout_marginTop="8dp" />
 

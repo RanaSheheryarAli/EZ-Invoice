@@ -46,8 +46,9 @@
                 android:text="OTP Verification"
                 android:layout_marginTop="60dp"
                 android:layout_marginStart="20dp"
-                android:textColor="#1B1F3B"
-                android:textSize="22sp"
+                android:textColor="@color/imp_text_color"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="28sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -57,7 +58,7 @@
                 android:gravity="start"
                 android:layout_marginStart="20dp"
                 android:text="Enter the verification code we just sent on your phone number."
-                android:textColor="#5F6368"
+                android:textColor="@color/primery_input_text"
                 android:textSize="14sp" />
 
             <!-- OTP Input Fields -->
@@ -130,7 +131,7 @@
             </LinearLayout>
 
             <!-- Verify Button -->
-            <androidx.appcompat.widget.AppCompatButton
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnVerifyotp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -140,21 +141,41 @@
                 android:elevation="4dp"
                 android:letterSpacing="0.1"
                 android:padding="12dp"
-                android:background="@drawable/rounded_box"
-                android:text="Verify"
+                android:text="VERIFY"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 app:cornerRadius="8dp" />
 
             <!-- Resend OTP Section -->
-            <TextView
-                android:id="@+id/tvResendTimer"
-                android:layout_width="wrap_content"
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+
                 android:layout_marginTop="30dp"
-                android:layout_gravity="center"
-                android:text="Resend OTP in 23s"
-                android:textColor="#333333" />
+
+                >
+
+                <TextView
+                    android:id="@+id/tvResendTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resend OTP in "
+                    android:textColor="#333333" />
+                <TextView
+                    android:id="@+id/ResendTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:text="23s"
+                    android:textColor="@color/imp_text_color" />
+            </LinearLayout>
+
+
 
             <TextView
                 android:id="@+id/tvResendotp"

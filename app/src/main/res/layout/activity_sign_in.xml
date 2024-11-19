@@ -30,17 +30,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:text="Sign In"
+                android:text="Login"
+                android:textStyle="bold"
                 android:layout_marginTop="32dp"
                 android:layout_gravity="start"
                 android:layout_marginStart="20dp"
-                android:textColor="#2B2F3E"
+                android:textColor="@color/imp_text_color"
                 android:textSize="28sp" />
 
             <TextView
                 android:id="@+id/tvWelcomeBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
+                android:fontFamily="sans-serif-medium"
                 android:text="Wellcome back to the app"
                 android:layout_gravity="start"
                 android:layout_marginStart="20dp"
@@ -64,7 +67,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Email"
-                    android:textColor="#555555"
+
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/primery_input_text"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -73,6 +78,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Phone Number"
+
+                    android:fontFamily="sans-serif-medium"
                     android:textStyle="bold"
                     android:layout_marginStart="20dp"
                     android:textColor="@color/buttoncolor"
@@ -86,10 +93,10 @@
                 android:layout_height="wrap_content"
                 android:text="Phone Number"
                 android:layout_marginStart="20dp"
-                android:textSize="18sp"
-                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
                 android:layout_marginEnd="20dp"
-                android:textColor="#1A2E5E"
+                android:textColor="@color/primery_input_text"
                 android:layout_marginBottom="4dp" />
             <TextView
                 android:id="@+id/tvemail"
@@ -110,12 +117,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:visibility="gone"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="24dp"
-                android:background="@drawable/rounded_box_outline"
+                android:visibility="gone"
+                android:background="@drawable/rounded_box_outline_edt"
                 android:hint="hello@example.com"
                 android:inputType="textPassword"
+                android:textColor="@color/primery_input_text"
                 android:padding="18dp" />
 
             <LinearLayout
@@ -124,9 +132,9 @@
                 android:layout_marginEnd="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rounded_box_outline"
+                android:background="@drawable/rounded_box_outline_edt"
                 android:orientation="horizontal"
-                android:padding="8dp"
+                android:padding="5dp"
                 android:layout_marginBottom="16dp">
 
                 <TextView
@@ -147,7 +155,9 @@
                     android:id="@+id/etPhoneNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/primery_input_text"
                     android:hint="Phone number"
+                    android:background="@drawable/rounded_box"
                     android:inputType="number"
                     android:textColorHint="#A0A4A8" />
             </LinearLayout>
@@ -166,9 +176,8 @@
                 android:layout_marginEnd="24dp"
                 android:fontFamily="sans-serif-medium"
                 android:text="Password"
-                android:textStyle="bold"
-                android:textColor="#1A2E5E"
-                android:textSize="18sp" />
+                android:textColor="@color/primery_input_text"
+                android:textSize="16sp" />
 
             <!-- Password EditText -->
 
@@ -180,10 +189,11 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="24dp"
-                android:background="@drawable/rounded_box_outline"
+                android:background="@drawable/rounded_box_outline_edt"
                 android:hint="••••••••••"
                 android:inputType="textPassword"
-                android:padding="18dp" />
+                android:padding="12dp"
+                android:textColor="@color/primery_input_text" />
 
             <TextView
                 android:id="@+id/tvForgot_Password"
@@ -196,7 +206,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:text="Forgot Password?"
                 android:textColor="@color/buttoncolor"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
 
@@ -207,13 +217,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginStart="20dp"
+                android:fontFamily="sans-serif-medium"
                 android:text="Keep me signed in"
                 android:textColor="#5F6368" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnGetStarted"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="32dp"
                 android:backgroundTint="@color/buttoncolor"
@@ -256,7 +267,7 @@
                     android:drawableStart="@drawable/google"
                     android:text="Continue with Google"
                     android:drawablePadding="-42dp"
-                    android:textColor="@color/light_text_colorr"
+                    android:textColor="@color/primery_input_text"
                     app:cornerRadius="8dp" />
 
 
@@ -268,6 +279,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="24dp"
+
+                android:fontFamily="sans-serif-medium"
                 android:text="Create an account"
                 android:textColor="#008080"
                 android:textSize="18sp" />

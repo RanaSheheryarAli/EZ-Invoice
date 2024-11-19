@@ -42,7 +42,7 @@
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="Business made easy\nCreate modern and professional bills"
-                android:textColor="#6E6E6E"
+                android:textColor="@color/scendory_input_text"
                 android:textSize="14sp" />
 
             <!-- Get Started Button -->
@@ -77,7 +77,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Have an account?"
-                    android:textColor="@color/black"
+                    android:textColor="@color/primery_input_text"
                     android:textSize="13sp" />
 
                 <TextView
