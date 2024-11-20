@@ -40,12 +40,15 @@ class MainActivity : AppCompatActivity() {
                 R.id.homeFragment -> {
                     dataBinding.headerLayout.tvTitle.text = "Home"
                 }
+
                 R.id.reportFragment -> {
                     dataBinding.headerLayout.tvTitle.text = "Reports"
                 }
+
                 R.id.itemsFragment -> {
                     dataBinding.headerLayout.tvTitle.text = "Items"
                 }
+
                 R.id.settingFragment -> {
                     dataBinding.headerLayout.tvTitle.text = "Settings"
                 }
@@ -54,8 +57,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         dataBinding.floatingActionButton.setOnClickListener {
-       val intent = Intent(this@MainActivity,Sale::class.java)
+            val intent = Intent(this@MainActivity, Sale::class.java)
             startActivity(intent)
         }
+
+
     }
 }

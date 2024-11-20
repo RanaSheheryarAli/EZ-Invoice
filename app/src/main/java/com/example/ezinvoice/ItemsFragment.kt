@@ -32,7 +32,7 @@ class ItemsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) { super.onViewCreated(view, savedInstanceState)
 
-        databinding.addnew.setOnClickListener{
+        databinding.btnAddnew.setOnClickListener{
             val intent = Intent(requireContext(), Add_Items::class.java)
             startActivity(intent)
         }

@@ -6,22 +6,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
-import com.example.ezinvoice.databinding.ActivitySaleBinding
+import com.example.ezinvoice.databinding.ActivityClientBinding
 import com.example.ezinvoice.databinding.ActivitySignInBinding
 
-class Sale : AppCompatActivity() {
-    lateinit var databinding: ActivitySaleBinding
+class Client : AppCompatActivity() {
+    lateinit var databinding: ActivityClientBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-       databinding=DataBindingUtil.setContentView(this,R.layout.activity_sale)
+       databinding=DataBindingUtil.setContentView(this,R.layout.activity_client)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        databinding.btnSave.setOnClickListener{
 
-        }
+        databinding.mainheader.tvTitle.setText("Clients")
     }
 }

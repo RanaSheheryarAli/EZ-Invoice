@@ -49,6 +49,11 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
+        databinding.containerClient.setOnClickListener{
+            val intent = Intent(requireContext(), Client::class.java)
+            startActivity(intent)
+        }
+
 
     }
 
