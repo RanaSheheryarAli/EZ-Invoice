@@ -27,20 +27,26 @@ class Add_Items : AppCompatActivity() {
         databinding.btnPricing.setOnClickListener{
             databinding.apply {
                 tvPriceLine.visibility= View.VISIBLE
-                tvStockLine.visibility=View.INVISIBLE
+                tvStockLine.visibility=View.GONE
+                containerStock.visibility=View.GONE
                 containerSale.visibility=View.VISIBLE
                 containerPurchase.visibility=View.VISIBLE
                 containerTexes.visibility=View.VISIBLE
             }
         }
 
+        databinding.headerLayout.tvTitle.setText("Add Items")
+
         databinding.btnStock.setOnClickListener{
+
             databinding.apply {
-                tvPriceLine.visibility= View.INVISIBLE
+
+                containerStock.visibility= View.VISIBLE
+                tvPriceLine.visibility= View.GONE
                 tvStockLine.visibility=View.VISIBLE
-                containerSale.visibility=View.INVISIBLE
-                containerPurchase.visibility=View.INVISIBLE
-                containerTexes.visibility=View.INVISIBLE
+                containerSale.visibility=View.GONE
+                containerPurchase.visibility=View.GONE
+                containerTexes.visibility=View.GONE
             }
         }
     }
