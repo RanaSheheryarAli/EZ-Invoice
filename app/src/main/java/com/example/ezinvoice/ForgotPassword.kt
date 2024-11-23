@@ -1,5 +1,6 @@
 package com.example.ezinvoice
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -12,6 +13,7 @@ import com.example.ezinvoice.databinding.ActivityStartScreenBinding
 
 class ForgotPassword : AppCompatActivity() {
     lateinit var databinding:ActivityForgotPasswordBinding
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
